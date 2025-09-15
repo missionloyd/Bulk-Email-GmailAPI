@@ -5,8 +5,7 @@
   "test_email_recipient": "recipient@domain.com",
   "sender_email": "noreply@domain.com",
   "recipients": ["all_recipients"],
-  "subject": "Gmail_Bulk_TEST",
-  "template_file": "body.html"
+  "subject": "Gmail_Bulk_TEST"
 }
 
 # ---- Remove everything below and including this line! -------------------------------------------------------------- #
@@ -19,4 +18,3 @@ Read below for the description of the configuration file:
 - The sender_email is the email address that the email should be sent from.
 - The recipients is a list of email addresses that the email should be sent to.
 - The subject is the subject of the email.
-- The template_file is the file name that contains the body of the email.

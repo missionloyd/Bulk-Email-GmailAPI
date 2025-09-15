@@ -1,0 +1,11 @@
+services:
+  bulk-email-gmailapi:
+    container_name: bulk-email-gmailapi
+    restart: always
+    build: 
+      context: .
+    volumes:
+      - ./log:/app/log
+      - ./last_sent.txt:/app/last_sent.txt
+    ports:
+      - "3000:3000"

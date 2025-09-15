@@ -17,7 +17,7 @@ def authenticate():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(config["api_credentials_file"], config["scopes"])
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_local_server(port=3000)
         with open("token.pickle", "wb") as token:
             pickle.dump(creds, token)
     return build('gmail', 'v1', credentials=creds)

@@ -42,8 +42,7 @@ class Config:
         """ Checks if the config file contains the required data """
         _data = self.config_data
 
-        requirements = ["sender_email", "recipients", "scopes", "api_credentials_file", "subject", "test",
-                        "template_file"]
+        requirements = ["sender_email", "recipients", "scopes", "api_credentials_file", "subject", "test",]
         for requirement in requirements:
             if requirement not in _data:
                 raise ConfigError(f"Config file does not contain top-level-requirement: {requirement}")
